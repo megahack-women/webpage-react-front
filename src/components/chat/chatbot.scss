@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body, #root, .container-chat-bot {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#meuid-login button {
+  border-radius: 35px;
+  box-shadow: 0px 2px 8px rgba(84, 0,255, 0.5);
+}
+
+.loading-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.container-chat-bot {
+  display: flex;
+  flex-direction: column;
+  background:#EBECF3;
+
+  header {
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background: #EBECF3;
+    justify-content: space-between;
+    color: black;
+    display: flex;
+    margin-bottom: 15px;
+    a { color: black; }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+}
+
+.chat-bot-container {
+  display: block;
+  width: 90%;
+  background: #EBECF3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 90px;
+  margin: 0 auto;
+  overflow-y: visible;
+
+  .chat-message {
+    padding: 10px;
+    display: flex;
+
+    .sending-message,
+    .receveid-message {
+      flex-grow: 100;
+      font-family: Nunito;
+      font-weight: 700;
+      font-size: 20px;
+      color: black;
+      display: flex;
+      align-items: center;
+      span {
+        display: block;
+        white-space: break-spaces;
+      }
+    }
+
+    .sending-message {
+      text-align: right;
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+      font-weight: normal;
+
+    }
+
+    .icon {
+      border-radius: 5px;
+      display: block;
+      flex-grow: 1;
+      padding: 0 10px;
+      font-size: 25px;
+    }
+  }
+
+}
+
+.chat-bot-footer {
+  display: flex;
+  padding: 20px;
+  background: white;
+  width: 100%;
+  input {
+    border: none;
+    background: none;
+  }
+}

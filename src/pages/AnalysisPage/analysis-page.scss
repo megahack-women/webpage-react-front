@@ -1,0 +1,151 @@
+.header-dinmais {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  background: #dde2e3;
+}
+.obs {
+  font-size: 10px;
+  color: red;
+  margin-bottom: 30px;
+}
+.options {
+  display: flex;
+  margin: 20px 0;
+  a {
+    margin-right: 30px;
+  }
+}
+
+.analysis-resume {
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: Nunito;
+  }
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-container > div:first-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > div {
+      width: 150px;
+    }
+  }
+
+  .page-container > div:last-child {
+    width: 150px;
+    flex-grow: 3;
+  }
+
+  .agroupment {
+    strong {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.3em;
+      margin-bottom: 10px;
+    }
+  }
+
+  .right {
+    .resume {
+      font-family: Nunito;
+      display: flex;
+      justify-content: space-between;
+      > div {
+        &:first-child {
+          width: 40%;
+        }
+        &:last-child {
+          width: 60%;
+          .values {
+            justify-content: space-around;
+          }
+        }
+      }
+      .mini-resume {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      strong {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .values {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        font-weight: 900;
+        span {
+          color: #4a2be8;
+        }
+      }
+    }
+  }
+}
+
+.donutContainer.customize {
+  position: relative;
+  height: 150px;
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .details.details--customize {
+    display: none;
+  }
+}
+
+p.submessage-score {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p.message-score {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.donutContainer.customize {
+  margin-bottom: 20px;
+}
+
+.analysis-resume .page-container > div:first-child p {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.persons-resume {
+  h2 {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Nunito;
+    margin-bottom: 15px;
+  }
+  p {
+    font-weight: bold;
+    margin-bottom: 30px;
+    span {
+      color: #4a2be8;
+    }
+  }
+}

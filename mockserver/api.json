@@ -1,0 +1,117 @@
+{
+  "category": [{
+    "id": 1,
+    "name": "Celular",
+    "products": [
+      {
+        "id": 1,
+        "image": {
+          "src": "https://images-submarino.b2w.io/produtos/01/00/img/360560/5/360560538_1SZ.jpg",
+          "alt": "asterisco",
+          "title": "Um asterisco."
+        },
+        "name": "um-asterisco",
+        "title": "Celular.",
+        "price": {
+          "de": 1000,
+          "por": 999
+        }
+      },
+      {
+        "id": 1,
+        "image": {
+          "src": "https://images-submarino.b2w.io/produtos/01/00/img/360560/5/360560538_1SZ.jpg",
+          "alt": "asterisco",
+          "title": "Um asterisco."
+        },
+        "name": "um-asterisco",
+        "title": "Um asterisco.",
+        "price": {
+          "de": 1000,
+          "por": 999
+        }
+      },
+      {
+        "id": 1,
+        "image": {
+          "src": "https://images-submarino.b2w.io/produtos/01/00/img/360560/5/360560538_1SZ.jpg",
+          "alt": "asterisco",
+          "title": "Um asterisco."
+        },
+        "name": "um-asterisco",
+        "title": "Um asterisco.",
+        "price": {
+          "de": 1000,
+          "por": 999
+        }
+      },
+      {
+        "id": 1,
+        "image": {
+          "src": "https://images-submarino.b2w.io/produtos/01/00/img/360560/5/360560538_1SZ.jpg",
+          "alt": "asterisco",
+          "title": "Um asterisco."
+        },
+        "name": "um-asterisco",
+        "title": "Um asterisco.",
+        "price": {
+          "de": 1000,
+          "por": 999
+        }
+      }
+    ],
+    "filter": [
+      {
+        "title": "Categorias",
+        "options": [
+          {
+            "value": "acessorios-celular",
+            "label": "Acessórios para celular"
+          },
+          {
+            "value": "celular-basico",
+            "label": "Celular Básico"
+          },
+          {
+            "value": "smartphone",
+            "label": "Smartphone"
+          }
+        ]
+      },
+      {
+        "title": "Marcas",
+        "options": [
+          {
+            "value": "acessorios-celular",
+            "label": "Apple"
+          },
+          {
+            "value": "celular-basico",
+            "label": "Samsung"
+          },
+          {
+            "value": "smartphone",
+            "label": "Nokia"
+          }
+        ]
+      },
+      {
+        "title": "Preço",
+        "options": [
+          {
+            "value": "acessorios-celular",
+            "label": "0 - R$ 10"
+          },
+          {
+            "value": "celular-basico",
+            "label": "R$ 11 - R$ 15"
+          },
+          {
+            "value": "smartphone",
+            "label": "R$ 16 - R$ 25"
+          }
+        ]
+      }
+    ]
+  }]
+}

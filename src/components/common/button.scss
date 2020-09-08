@@ -1,0 +1,60 @@
+$buttonfontweight: bold;
+$buttonfontfamily:  'Avenir', Helvetica, Arial, sans-serif;
+$buttonbackground: rgb(170, 170, 170);
+$buttonborderradius: 30px;
+$buttonboxshadow: 9px 6px 15px #00C8FC57;
+$buttonHoverboxshadow: $buttonboxshadow;
+$buttonHoverbackgroundcolor: darken($buttonbackground, 10%);
+$buttonfontcolor: #fff;
+
+.button {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  background-color: $buttonbackground;
+  border: none;
+  border-radius: $buttonborderradius;
+  box-shadow: $buttonboxshadow;
+  cursor: pointer;
+  display: inline-block !important;
+  font-family: $buttonfontfamily;
+  font-weight: $buttonfontweight;
+  outline: none;
+  padding: 10px 25px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: $buttonfontcolor;
+
+  &:hover {
+    background-color: $buttonHoverbackgroundcolor;
+    box-shadow: $buttonHoverboxshadow;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.primary {
+    background-color: $colorprimary;
+  }
+
+  &.secondary {
+    background-color: $colorsecondary;
+  }
+
+  &.info {
+    background-color: $colorinfo;
+  }
+
+  &.warning {
+    background-color: $colorwarning;
+  }
+
+  &.danger {
+    background-color: $colordanger;
+  }
+
+  &.light {
+    background-color: $colorlight;
+  }
+
+}

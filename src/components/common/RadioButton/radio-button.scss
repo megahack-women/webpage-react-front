@@ -1,0 +1,81 @@
+@import '../variables.scss';
+
+.radio-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+
+  margin-bottom: 5px;
+
+  .radio-label {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.radio-input {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+
+  input[type=radio]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+    &:checked ~ .checkmark {
+      background-color: #fff;
+      border-color: #00c8fc;
+    }
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    &:after {
+      top: 4px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #00c8fc;
+      z-index: 999999;
+    }
+  }
+
+  input[type=radio] ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid #D0D0D0;
+  }
+}

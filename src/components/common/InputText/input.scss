@@ -1,0 +1,35 @@
+$danger: #dc3545;
+
+input[type=password] {
+  font-size: 15px;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+select {
+  width: 100%;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+textarea,
+select {
+  border: 1px solid #D0D0D0;
+  border-radius: 2px;
+  padding: 13px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  outline: none;
+
+  &.input-error {
+    border-color: $danger;
+  }
+}
+
+::placeholder {
+  color: #999;
+}

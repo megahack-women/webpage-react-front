@@ -1,0 +1,23 @@
+.msg {
+  padding: 5px 0;
+  font-size: 10px;
+
+  &.error {
+    color: $colordanger;
+    font-weight: 400;
+  }
+  
+  &.status {
+    padding: 5px 10px;
+    font-size: 13px;
+    color: white;
+    background-color: $colordanger;
+    border-radius: 4px;
+  }
+
+  .list {
+    list-style: circle;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+}
